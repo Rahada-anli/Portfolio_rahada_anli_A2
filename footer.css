@@ -1,0 +1,189 @@
+
+
+
+.remonter {
+
+    position: fixed;
+    top: 90%;
+    left: 94%;
+
+    background-color: aliceblue;
+    padding: 1em;
+    border-radius: 5px;
+    z-index: 29 !important;
+    animation: slide_icon linear;
+    animation-timeline: scroll();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 20%;
+
+    i {
+        color: rgb(5, 115, 211);
+    }
+} 
+
+
+.foot_p{
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    color: aliceblue;
+    text-align: center;
+    font-size: 1em;
+}
+
+
+footer {
+
+    padding-bottom: 5em;
+    font-family: "Montserrat", sans-serif;
+
+  .foot{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2em;
+    
+
+
+    .sec_logo_foot {
+
+        
+        p{
+            color: aliceblue;
+            
+             text-shadow: 0 0 0.5em rgb(76, 77, 76);
+            font-weight: 900;
+
+        }
+
+        img{
+
+            width: 8em;
+        }
+
+    }
+
+
+    .sec_1_foot {
+
+        display: flex;
+        flex-direction: column;
+
+       
+
+        a{
+            color: aliceblue;
+            text-decoration: none;
+            padding: 1em;
+
+            &:hover
+            {
+                border-bottom: 2px solid #01a3e9;
+                width: 10em;
+                transform: translateX(10%);
+                transition: all 0.5s;
+                 color: rgb(145, 235, 255);
+                  text-shadow: 0 0 0.5em rgb(0, 200, 255);
+            }
+        }
+    }
+}
+
+}
+
+footer .sec_2_foot
+{
+
+    margin-top:-9em ;
+    display: flex;
+    flex-direction: column;
+
+
+    h2{
+        width: 3em;
+    }
+    .lien_foot{
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+
+
+    a{
+        color: rgb(145, 235, 255);
+        text-decoration: none;
+        font-size: 2.5em;
+        
+        transition: all 0.5s;
+        &:hover{
+
+           text-shadow: 0 0 0.9em rgb(0, 200, 255);
+           transform: rotate(-90deg);
+        }
+    }
+}
+
+}
+
+.menu_h2_foot{
+
+    font-weight: 900;
+    color: rgb(145, 235, 255);
+    padding: 0.5em;
+    text-shadow: 0 0 0.5em rgb(0, 200, 255);
+    border-top: 2px dotted #00aef9;
+
+}
+footer{
+    margin-top: 15em;
+    margin-bottom: -1em;
+}
+
+img[title="mail"]{
+    
+    width: 2.8em;
+    height: 2.5em;
+}
+
+.p_f{
+    text-align: center;
+    color: aliceblue;
+    font-weight: 100;
+}
+
+
+@keyframes slide_icon {
+    from {
+      transform: translateY(5%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+
+
+@media screen and (max-width: 1023px){
+
+
+    .remonter {
+
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    z-index: 8 !important;
+    
+} 
+    .foot{
+
+        gap: 8em;
+        justify-content: center;
+        align-items: center;
+    }
+}
